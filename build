@@ -1,0 +1,8 @@
+#!/bin/sh
+
+printf "Building for Linux x64.\n"
+dotnet build --no-self-contained -c Release -r linux-x64
+printf "Building for Windows x86.\n"
+dotnet build --no-self-contained -c Release -r win-x86
+rm -rf ./obj
+
