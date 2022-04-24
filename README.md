@@ -12,7 +12,7 @@ Then run the `DCalculator` executable.
 ## License
 ```
 "THE BEER-WARE LICENSE" (Revision 42):
-Revvy/Codedipper wrote this file.  As long as you retain this notice you
+Revvy/Codedipper wrote this program.  As long as you retain this notice you
 can do whatever you want with this stuff. If we meet some day, and you think
 this stuff is worth it, you can buy me a beer in return (when I turn 19).
 ```
