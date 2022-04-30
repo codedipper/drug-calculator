@@ -18,6 +18,7 @@ class DrugCalculator {
 		cw("8 - LSD");
 		cw("9 - Opium");
 		cw("10 - MDMA");
+		cw("11 - Ketamine");
 		cw("-------------");
 		cw("Methods Available:");
 		cw("0 - Price To Amount");
@@ -63,6 +64,7 @@ class DrugCalculator {
 		89,
 		2000,
 		16,
-		150		
+		150,
+		20		
 	};
 }
