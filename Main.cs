@@ -16,6 +16,8 @@ class DrugCalculator {
 		cw("6 - Fentanyl");
 		cw("7 - Codeine");
 		cw("8 - LSD");
+		cw("9 - Opium");
+		cw("10 - MDMA");
 		cw("-------------");
 		cw("Methods Available:");
 		cw("0 - Price To Amount");
@@ -59,6 +61,8 @@ class DrugCalculator {
 		50,
 		150,
 		89,
-		2000
+		2000,
+		16,
+		150		
 	};
 }
