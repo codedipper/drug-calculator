@@ -15,7 +15,7 @@ class DrugCalculator {
 		cw("5 - Oxycodone");
 		cw("6 - Fentanyl");
 		cw("7 - Codeine");
-		cw("8 - LSD");
+		cw("8 - LSD (Tabs, not Grams)");
 		cw("9 - Opium");
 		cw("10 - MDMA");
 		cw("11 - Ketamine");
@@ -39,13 +39,21 @@ class DrugCalculator {
 		int drug = int.Parse(args[0]);
 		int method = int.Parse(args[1]);
 		var valid = decimal.TryParse(args[2], out decimal amount);
-		
+
 		if (drug + 1 > ppg.Length || drug < 0 || !valid){
 			Help();
 		}
 
 		if (method == 0){
-			cw($"Total grams: {Math.Round(amount / ppg[drug], 4)}");
+			string type;
+
+			if (drug == 8){
+				type = "tabs";
+			} else {
+				type = "grams";
+			}
+
+			cw($"Total {type}: {Math.Round(amount / ppg[drug], 4)}");
 		} else if (method == 1){
 			cw($"Total price: {Math.Round(amount * ppg[drug], 2)}");
 		} else {
@@ -62,7 +70,7 @@ class DrugCalculator {
 		50,
 		150,
 		89,
-		2000,
+		4,
 		16,
 		150,
 		20		
